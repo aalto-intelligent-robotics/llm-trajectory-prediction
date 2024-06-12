@@ -19,11 +19,16 @@ This repository contains the code for training and inference with [LoRA adapter]
 
 Install [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
 
-Create conda environment:
+Create Conda environment:
 
 ```
 conda create -n llmtp python=3.9
 
+```
+
+And activate it:
+
+```
 conda activate llmtp
 ```
 
@@ -45,20 +50,24 @@ The same files can be obtained by using the raw data from GPT-Driver and running
 
 Download the saved checkpoints for LoRA adapters from the following links and unzip them:
 
-* Llama2-7B: TBA
-* Llama2-Chat-7B: TBA
-* Mistral: TBA
-* Zephyr: TBA
-* GPT-2: TBA
+| Model | HuggingFace model | Checkpoint |
+| ----- | ----------------- | ---------- |
+|Llama2-7B | [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf) | [download](https://drive.google.com/file/d/1iZCD6sAAUi-y6gzRTwZtruiT4McbQJTj/view?usp=drive_link) |
+|Llama2-7B-Chat | [meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) | [download](https://drive.google.com/file/d/1tntpTfbRR2uWXlTwYYlgC925fXkDmBNV/view?usp=drive_link) | 
+| Mistral-7B | [mistralai/Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) | *tba* | 
+| Zephyr-7B | [HuggingFaceH4/zephyr-7b-beta](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) | *tba* | 
+| GPT-2 | [gpt2](https://huggingface.co/gpt2) | *tba* | 
 
-In the code, pass the path to the corresponding adapter checkpoint as a parameter `adapter_path` in the script `inference.py`.
 
 ## Running the Experiments
 
 ### Inference
 
-The script `inference.py` needs to be executed with corresponsing parameters. 
+The script `inference.py` needs to be executed with corresponding parameters. 
 See the file `run_inference.sh` for an example.
+
+* Pass the HF model name in the parameter `model_name`.
+* Pass the path to the corresponding adapter checkpoint as a parameter `adapter_path`.
 
 ### Evaluation
 
@@ -74,6 +83,8 @@ To save the evaluation results to a file, run:
 
 The script `training.py` needs to be executed with corresponsing parameters. 
 See the file `run_training.sh` for an example.
+
+* Pass the HF model name in the parameter `model_name`.
 
 ## Citation
 
