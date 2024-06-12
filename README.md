@@ -72,3 +72,22 @@ To save the evaluation results to a file, run:
 
 The script `training.py` needs to be executed with corresponsing parameters. 
 See the file `run_training.sh` for an example.
+
+## Citation
+
+@inproceedings{munir2024llmtrajpred,
+author = {Munir, Farzeen and Mihaylova, Tsvetomila and Azam, Shoaib and Kucner, Tomasz Piotr and Kyrki, Ville},
+title = {Exploring Large Language Models for Trajectory Prediction: A Technical Perspective},
+year = {2024},
+isbn = {9798400703232},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3610978.3640625},
+doi = {10.1145/3610978.3640625},
+booktitle = {Companion of the 2024 ACM/IEEE International Conference on Human-Robot Interaction},
+pages = {774–778},
+numpages = {5},
+keywords = {autonomous driving, large language models, trajectory prediction},
+location = {<conf-loc>, <city>Boulder</city>, <state>CO</state>, <country>USA</country>, </conf-loc>},
+series = {HRI '24}
+}
