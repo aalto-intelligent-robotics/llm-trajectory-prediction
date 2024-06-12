@@ -22,7 +22,9 @@ Install [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/ind
 Create conda environment:
 
 ```
-conda create -n python=3.9
+conda create -n llmtp python=3.9
+
+conda activate llmtp
 ```
 
 Install required libraries:
