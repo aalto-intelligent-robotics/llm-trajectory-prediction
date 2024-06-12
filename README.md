@@ -5,6 +5,11 @@ This repository contains code for the report by F. Munir, T. Mihaylova, S. Azam,
 
 ## About
 
+This work explores use of large language models (LLMs) for trajectory prediction. 
+We show that relatively small open-source models (with 7B parameters) can be fine-tuned to predict trajectory with a performance similar to much larger models.
+
+### GPT-Driver
+
 The work is based on [GPT-Driver](https://github.com/PointsCoder/GPT-Driver) and uses their provided dataset.
 
 ### PEFT
